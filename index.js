@@ -75,7 +75,7 @@ function hamburgerToggle() {
   nav.classList.toggle("h-full");
   nav.classList.toggle("hidden");
   navUl.classList.toggle("bg-gray-900");
-  navUl.classList.toggle("bg-opacity-70");
+  navUl.classList.toggle("bg-opacity-100");
   navUl.classList.toggle("h-screen");
 
   hamburgerIcon.classList.toggle("mNav-open");
