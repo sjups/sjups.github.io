@@ -46,24 +46,38 @@ $(document).ready(function () {
 $(document).ready(function () {
   AOS.init();
 });
-// slider
+
 const swiper = new Swiper(".swiper-container", {
   // Optional parameters
   direction: "horizontal",
+  slidesPerView: "auto",
   loop: true,
 
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
   },
-
+  breakpoints: {
+    480: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
 });
 // Navbar toggle
@@ -74,9 +88,11 @@ hamburgerIcon.addEventListener("click", hamburgerToggle);
 function hamburgerToggle() {
   nav.classList.toggle("h-full");
   nav.classList.toggle("hidden");
-  navUl.classList.toggle("bg-gray-900");
+  navUl.classList.toggle("bg-gray-800");
   navUl.classList.toggle("bg-opacity-100");
   navUl.classList.toggle("h-screen");
+  navUl.classList.toggle("-right-10");
+  navUl.classList.toggle("right-0");
 
   hamburgerIcon.classList.toggle("mNav-open");
   hamburgerIcon.children[0].classList.toggle("rotate-45");

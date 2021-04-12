@@ -4230,7 +4230,19 @@ video {
 }
 
 .bg-herobg {
-  background-image: url('./img/testImg.jpg');
+  background-image: url('./img/school.jpg');
+}
+
+.bg-featurebg {
+  background-image: url('./img/feature.jpg');
+}
+
+.bg-feature2bg {
+  background-image: url('./img/feature.jpg');
+}
+
+.bg-feature3bg {
+  background-image: url('./img/feature.jpg');
 }
 
 .from-transparent {
@@ -34871,7 +34883,19 @@ video {
   }
 
   .sm\:bg-herobg {
-    background-image: url('./img/testImg.jpg');
+    background-image: url('./img/school.jpg');
+  }
+
+  .sm\:bg-featurebg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .sm\:bg-feature2bg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .sm\:bg-feature3bg {
+    background-image: url('./img/feature.jpg');
   }
 
   .sm\:from-transparent {
@@ -65434,7 +65458,19 @@ video {
   }
 
   .md\:bg-herobg {
-    background-image: url('./img/testImg.jpg');
+    background-image: url('./img/school.jpg');
+  }
+
+  .md\:bg-featurebg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .md\:bg-feature2bg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .md\:bg-feature3bg {
+    background-image: url('./img/feature.jpg');
   }
 
   .md\:from-transparent {
@@ -95997,7 +96033,19 @@ video {
   }
 
   .lg\:bg-herobg {
-    background-image: url('./img/testImg.jpg');
+    background-image: url('./img/school.jpg');
+  }
+
+  .lg\:bg-featurebg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .lg\:bg-feature2bg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .lg\:bg-feature3bg {
+    background-image: url('./img/feature.jpg');
   }
 
   .lg\:from-transparent {
@@ -126560,7 +126608,19 @@ video {
   }
 
   .xl\:bg-herobg {
-    background-image: url('./img/testImg.jpg');
+    background-image: url('./img/school.jpg');
+  }
+
+  .xl\:bg-featurebg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .xl\:bg-feature2bg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .xl\:bg-feature3bg {
+    background-image: url('./img/feature.jpg');
   }
 
   .xl\:from-transparent {
@@ -157123,7 +157183,19 @@ video {
   }
 
   .\32xl\:bg-herobg {
-    background-image: url('./img/testImg.jpg');
+    background-image: url('./img/school.jpg');
+  }
+
+  .\32xl\:bg-featurebg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .\32xl\:bg-feature2bg {
+    background-image: url('./img/feature.jpg');
+  }
+
+  .\32xl\:bg-feature3bg {
+    background-image: url('./img/feature.jpg');
   }
 
   .\32xl\:from-transparent {
