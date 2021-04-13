@@ -14,72 +14,78 @@ if (window.location.hash) {
   );
 } // End if
 
-// Smooth scroll
-$(document).ready(function () {
-  // Add smooth scrolling to all links
-  $("a").on("click", function (event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+function enableSmoothScroll() {
+  // Smooth scroll
+  $(document).ready(function () {
+    // Add smooth scrolling to all links
+    $("a").on("click", function (event) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+        // Store hash
+        var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
-        800,
-        function () {
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        }
-      );
-    } // End if
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $("html, body").animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          }
+        );
+      } // End if
+    });
   });
-});
 
-// Animate on Scroll
-$(document).ready(function () {
-  AOS.init();
-});
+  function enableAos() {
+    // Animate on Scroll
+    $(document).ready(function () {
+      AOS.init();
+    });
+  }
+}
+function enableSwiperSlide() {
+  const swiper = new Swiper(".swiper-container", {
+    // Optional parameters
+    direction: "horizontal",
+    slidesPerView: "auto",
+    loop: true,
 
-const swiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  direction: "horizontal",
-  slidesPerView: "auto",
-  loop: true,
+    // If we need pagination
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+      },
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+}
 
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  breakpoints: {
-    480: {
-      slidesPerView: 1,
-    },
-    640: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  autoplay: {
-    delay: 3000,
-  },
-});
 // Navbar toggle
 let navUl = document.querySelector("#navUl");
 let hamburgerIcon = document.querySelector("#hamburgerIcon");
