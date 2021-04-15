@@ -15,7 +15,9 @@
 <body>
     <section id="home">
         <div class="phone bg-red-600 px-5 flex justify-center md:justify-end">
-            <h2 class="font-bold text-lg p-2 text-gray-50 font-body">Call us on : +91 1234567890</h2>
+            <h2 class="font-bold text-lg p-2 text-gray-50 font-body">Call us on : +91 1234567890 or <a
+                    href="https://api.whatsapp.com/send?phone=919446863622&text="><span
+                        class="fab fa-whatsapp"></span></a></h2>
         </div>
         <header class="flex justify-center md:justify-between h-full px-5 py-4 items-center">
             <div class="">
@@ -63,7 +65,12 @@
             <div class="heroContent text-center relative flex flex-col justify-center items-center">
 
                 <h2 class="font-bold text-red-50">St.Joseph School Narakakkanam</h2>
-                <h1 class="font-bold font-display text-6xl text-red-50">Awesome <br>Up School</h1>
+                <h1 class="font-bold font-display text-6xl text-red-50">
+                    <script>
+                        let a = new Date().getFullYear();
+                        document.write(a - 1964)
+                    </script> Years <br> of Excellence
+                </h1>
                 <h3 class="text-xl p-5 md:w-1/2 text-red-50">Lorem ipsum dolor sit amet consectetur
                     adipisicing
                     elit.
@@ -136,28 +143,33 @@
     </div>
     <section id="about" class="bg-white  p-5 pb-20">
         <h2 class="text-center font-bold font-display underline pt-10 text-2xl py-10">About Us</h2>
-        <img src="./img/testImg.jpg" alt="" class="rounded p-5">
-        <div class="p-5 m-3 bg-white shadow-lg text-black">
-            <h3 class="font-display">Who are we?</h3>
-            <p class="font-body">മഞ്ഞിന്റെ കുളിരണിഞ്ഞു ഹരിതഫയുടെ പൊന്നോലകളുടെ ദൃശ്യമനോഹാരിതയ്ക്ക് ഒരു കുറവും വരുത്താതെ
-                കുറുജി മലയുടെ മടിത്തട്ടിൽ സ്ഥിതിചെയ്യുന്ന നാരകക്കാനം എന്ന കൊച്ചു ഗ്രാമം.ഈ മലനിരയ്ക്ക് മഹത്തായ ഒരു
-                പാരമ്പര്യം ഉണ്ട്, അധ്വാനത്തിന്റെയും കഷ്ടപ്പാടിന്റെയും ഒരു ചരിത്രമുണ്ട്.ഇടുക്കി ആർച് ഡാം മുതൽ തങ്കമണി,
-                മരിയാപുരം,കാൽവരിമൗണ്ട് എന്നീ പ്രദേശങ്ങളോട് അതിർത്തി പങ്കിടുന്ന ഗ്രാമമാണ് നാരകക്കാനം.ഈ ഗ്രാമത്തിന്റെ
+        <div class="flex justify-center p-5">
+            <div class="bg-red-900 inline-block bg-opacity-30">
+                <img src="./img/testImg.jpg" alt="" class="-m-5">
+            </div>
+        </div>
+        <div class="p-5 m-3 bg-white shadow-lg text-black text-center md:text-left">
+            <h3 class="font-display text-xl">Who are we?</h3>
+            <p class="font-body text-lg">മഞ്ഞിന്റെ കുളിരണിഞ്ഞു ഹരിതഫയുടെ പൊന്നോലകളുടെ ദൃശ്യമനോഹാരിതയ്ക്ക് ഒരു കുറവും
+                വരുത്താതെ
+                കുറുജി മലയുടെ മടിത്തട്ടിൽ സ്ഥിതിചെയ്യുന്ന നാരകക്കാനം എന്ന കൊച്ചു ഗ്രാമത്തിന്റെ
                 തിലകക്കുറിയായി പ്രശോഭിക്കുന്ന നമ്മുടെ കൊച്ചു വിദ്യാലയം, ഇളം തലമുറയ്ക്ക് വിക്ജ്ഞാനത്തോടൊപ്പം ആത്മീയ
                 തേജസും ജീവിതദര്ശനവും ഏകുന്ന സെന്റ് ജോസഫ് യൂ പി സ്കൂൾ.</p>
             <a href="./history.html"
-                class="inline-block font-body font-bold bg-green-600 px-5 p-2 my-5 text-white hover:bg-red-700 text-xl text-center">View
-                Complete school History >></a>
+                class="inline-block font-display font-bold    my-5 text-red-500 underline hover:text-red-700 text-xl text-center">View
+                Complete school History <span class="fas fa-arrow-right"></span></a>
         </div>
-        <div class="p-5 m-3 bg-white shadow-lg text-black">
-            <h3 class="font-display">Vison</h3>
-            <p class="font-body">Our Vision is a community where all children feel loved, respected and encouraged to
+        <div class="p-5 m-3 bg-white shadow-lg text-black text-center md:text-left">
+            <h3 class="font-display text-xl">Vison</h3>
+            <p class="font-body text-lg">Our Vision is a community where all children feel loved, respected and
+                encouraged to
                 develop to their
                 fullest potential.</p>
         </div>
-        <div class="p-5 m-3 bg-white shadow-lg text-black">
-            <h3 class="font-display">Mission</h3>
-            <p class="font-body">Our Mission is to provide high quality education and childcare in a safe, respectful
+        <div class="p-5 m-3 bg-white shadow-lg text-black text-center md:text-left">
+            <h3 class="font-display text-xl">Mission</h3>
+            <p class="font-body text-lg">Our Mission is to provide high quality education and childcare in a safe,
+                respectful
                 and inclusive environment that builds a foundation for life-long learning..</p>
         </div>
     </section>
@@ -166,18 +178,19 @@
     </div>
     <section id="faculty" class="p-5 pb-16 bg-blue-50">
         <h2 class="text-center font-bold font-display underline pt-10 text-2xl py-10">Faculty</h2>
-        <div class="m-5 p-5 bg-red-50">
+        <h3 class="text-center font-bold font-display underline pt-10 text-xl py-10 text-red-800">Headmaster</h3>
+        <div class="m-5 p-5 bg-white shadow-lg">
             <div class="flex flex-col md:flex-row  justify-center items-center">
                 <img src="./img/faculty.jpeg" alt="" class="w-48 md:w-72 lg:w-80 rounded">
-                <div class="details text-center md:text-left">
+                <div class="details text-center md:text-left p-3">
                     <h3 class="font-bold text-xl">Our Beloved Person</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse debitis ad, quod nemo cum ab
                         quibusdam eveniet porro facilis totam.</p>
                     <div class="contact">
                         <p>
-                            Name: <span class="font-bold">Eaine Benes</span>
-                            Email: <span class="font-bold">Eaine Benes@gmail.com</span>
-                            class: <span class="font-bold">Eaine Benes</span>
+                            Name: <span class="font-bold">Eaine Benes</span> <br>
+                            Email: <span class="font-bold">Eaine Benes@gmail.com</span> <br>
+                            class: <span class="font-bold">Eaine Benes</span><br>
                             Phone: <span class="font-bold">Eaine Benes</span>
 
                         </p>
@@ -185,6 +198,45 @@
                 </div>
             </div>
         </div>
+        <h3 class="text-center font-bold font-display underline pt-10 text-xl py-10 text-green-600">Management</h3>
+        <div id="FacultyManagement" class="">
+            <div class="m-5 p-5 bg-red-50 shadow-lg">
+                <div class="flex flex-col md:flex-row  justify-center items-center">
+                    <img src="./img/faculty.jpeg" alt="" class="w-48 md:w-72 lg:w-80 rounded">
+                    <div class="details text-center md:text-left p-3">
+                        <h3 class="font-bold text-xl">Our Beloved Person</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse debitis ad, quod nemo cum ab
+                            quibusdam eveniet porro facilis totam.</p>
+                        <div class="contact">
+                            <p>
+                                Name: <span class="font-bold">Eaine Benes</span> <br>
+                                Email: <span class="font-bold">Eaine Benes@gmail.com</span> <br>
+                                class: <span class="font-bold">Eaine Benes</span><br>
+                                Phone: <span class="font-bold">Eaine Benes</span>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row flex-wrap justify-center items-center">
+                <div
+                    class="flex flex-col md:flex-row justify-center items-center bg-green-50 p-5 shadow-md rounded-xl m-5">
+                    <img src="./img/faculty.jpeg" alt="" class="w-24 h-24 rounded-full">
+                    <div class="contact text-center md:text-left px-2">
+                        <p>
+                            Name: <span class="font-bold">Eaine Benes</span> <br>
+                            Email: <span class="font-bold">Eaine Benes@gmail.com</span> <br>
+                            class: <span class="font-bold">Eaine Benes</span><br>
+                            Phone: <span class="font-bold">Eaine Benes</span>
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h3 class="text-center font-bold font-display underline pt-10 text-xl py-10 text-blue-800">Teachers</h3>
 
         <div class="swiper-container w-full">
             <div class="swiper-wrapper">
@@ -215,7 +267,7 @@
     <div id="break" class="p-5 py-10 bg-green-200 transform -skew-y-2 -my-10 ">
 
     </div>
-    <section id="contact-us" class="flex justify-center bg-green-200">
+    <section id="contact-us" class="flex flex-col justify-center items-center bg-green-200 pb-16">
         <div id="contact"
             class="bg-blue-50 rounded relative m-5 w-full md:w-1/2 max-w-xl  p-2 py-5 md:p-5 mb-10 flex flex-col">
             <h2 class="font-bold font-display text-3xl text-center m-5">Contact Us</h2>
@@ -223,8 +275,8 @@
 
             </div>
             <form id="form" method="POST" class="w-full flex flex-col justify-center">
-                <input type="hidden" name="apikey" value="3f8c7781-0342-41c7-bbd1-f889c01e006e">
-                <input type="hidden" name="subject" value="Customer Message">
+                <input type="hidden" name="apikey" value="0bf198a5-7772-4131-a1e1-36df179f3adc">
+                <input type="hidden" name="subject" value="Enquiry Message">
                 <div class="m-3">
                     <label for="Name">Name</label>
                     <input type="text" class="p-3 w-full focus:ring-2 transition ease-in-out"
@@ -241,18 +293,34 @@
                         placeholder="Enter your message" name="message" required></textarea>
                 </div>
                 <button type="submit"
-                    class="py-4 px-6 bg-red-400 inline-block m-3 hover:bg-red-600 text-blue-50 font-bold">submit</button>
+                    class="py-4 px-6 bg-red-400 inline-block m-3 hover:bg-red-600 text-blue-50 font-bold">Enquire</button>
             </form>
             <div class="text-center my-5">
-                <p class="text-xl md:text-2xl"> <span class="fas fa-phone-alt"></span> +91 1234567890</p>
-                <p class="text-xl md:text-2xl"><span class="far fa-envelope"></span><a href="#">
-                        school@gmail.com</a>
+                <p class="text-xl md:text-2xl"> <span class="fas fa-phone-alt"></span> <a
+                        href="https://api.whatsapp.com/send?phone=919446863622&text=">+91 9446863622</a></p>
+                <p class="text-xl md:text-2xl"><span class="far fa-envelope"></span><a
+                        href="mailto:sjupsnarakakkanam@gmail.com">
+                        sjupsnarakakkanam@gmail.com</a>
                 </p>
             </div>
 
         </div>
+        <div class="meetus p-5 bg-blue-50">
+            <h2 class="text-center font-bold font-display underline pt-10 text-2xl py-10">Reach Us</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251655.60187214223!2d77.1009474676454!3d9.756005334986549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07babaef22e201%3A0x4f747580a81d531f!2sSt%20Joseph%20UP%20School%20Narakakkanam!5e0!3m2!1sen!2sin!4v1618342939842!5m2!1sen!2sin"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                class="w-80 md:w-96"></iframe>
+            <div class="address p-5 font-body font-bold text-center">
+                <p>St Joseph UP School Narakakkanam <br>Thodupuzha - Puliyanmala Rd,<br> Narakakkanam, <br> Kerala
+                    685602</p>
+            </div>
+        </div>
     </section>
-    <footer class="w-full flex flex-col bg-red-700 text-white justify-center items-center p-5">
+    <div id="break" class="p-5 py-10 bg-red-700 transform -skew-y-2 -my-10 ">
+
+    </div>
+    <footer class="w-full flex flex-col bg-red-700 text-white justify-center items-center p-5 pt-10">
         <h2>&copy; Stt Jospeh up School Narakakkanam</h2>
         <h3>Powered by Infyplus</h3>
     </footer>
