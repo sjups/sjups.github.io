@@ -87,49 +87,47 @@ function enableSwiperSlide() {
 // Light gallery
 
 function enableLightGallery() {
-  $(document).ready(function () {
-    lightGallery(document.querySelector("#galChildren"), {
-      thumbnail: true,
-      animateThumb: false,
-      showThumbByDefault: false,
-      mode: "lg-fade",
-      loop: true,
-    });
-    lightGallery(document.querySelector("#galTeacher"), {
-      thumbnail: true,
-      animateThumb: false,
-      showThumbByDefault: false,
-      mode: "lg-fade",
-      loop: true,
-    });
-    lightGallery(document.querySelector("#galOnam"), {
-      thumbnail: true,
-      animateThumb: false,
-      showThumbByDefault: false,
-      mode: "lg-fade",
-      loop: true,
-    });
-    lightGallery(document.querySelector("#galAnniversary"), {
-      thumbnail: true,
-      animateThumb: false,
-      showThumbByDefault: false,
-      mode: "lg-fade",
-      loop: true,
-    });
-    lightGallery(document.querySelector("#galIndependence"), {
-      thumbnail: true,
-      animateThumb: false,
-      showThumbByDefault: false,
-      mode: "lg-fade",
-      loop: true,
-    });
-    lightGallery(document.querySelector("#galSchool"), {
-      thumbnail: true,
-      animateThumb: false,
-      showThumbByDefault: false,
-      mode: "lg-fade",
-      loop: true,
-    });
+  lightGallery(document.querySelector("#galChildren"), {
+    thumbnail: true,
+    animateThumb: false,
+    showThumbByDefault: false,
+    mode: "lg-fade",
+    loop: true,
+  });
+  lightGallery(document.querySelector("#galTeacher"), {
+    thumbnail: true,
+    animateThumb: false,
+    showThumbByDefault: false,
+    mode: "lg-fade",
+    loop: true,
+  });
+  lightGallery(document.querySelector("#galOnam"), {
+    thumbnail: true,
+    animateThumb: false,
+    showThumbByDefault: false,
+    mode: "lg-fade",
+    loop: true,
+  });
+  lightGallery(document.querySelector("#galAnniversary"), {
+    thumbnail: true,
+    animateThumb: false,
+    showThumbByDefault: false,
+    mode: "lg-fade",
+    loop: true,
+  });
+  lightGallery(document.querySelector("#galIndependence"), {
+    thumbnail: true,
+    animateThumb: false,
+    showThumbByDefault: false,
+    mode: "lg-fade",
+    loop: true,
+  });
+  lightGallery(document.querySelector("#galSchool"), {
+    thumbnail: true,
+    animateThumb: false,
+    showThumbByDefault: false,
+    mode: "lg-fade",
+    loop: true,
   });
 }
 // Navbar toggle
