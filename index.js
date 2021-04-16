@@ -84,7 +84,54 @@ function enableSwiperSlide() {
     },
   });
 }
+// Light gallery
 
+function enableLightGallery() {
+  $(document).ready(function () {
+    lightGallery(document.querySelector("#galChildren"), {
+      thumbnail: true,
+      animateThumb: false,
+      showThumbByDefault: false,
+      mode: "lg-fade",
+      loop: true,
+    });
+    lightGallery(document.querySelector("#galTeacher"), {
+      thumbnail: true,
+      animateThumb: false,
+      showThumbByDefault: false,
+      mode: "lg-fade",
+      loop: true,
+    });
+    lightGallery(document.querySelector("#galOnam"), {
+      thumbnail: true,
+      animateThumb: false,
+      showThumbByDefault: false,
+      mode: "lg-fade",
+      loop: true,
+    });
+    lightGallery(document.querySelector("#galAnniversary"), {
+      thumbnail: true,
+      animateThumb: false,
+      showThumbByDefault: false,
+      mode: "lg-fade",
+      loop: true,
+    });
+    lightGallery(document.querySelector("#galIndependence"), {
+      thumbnail: true,
+      animateThumb: false,
+      showThumbByDefault: false,
+      mode: "lg-fade",
+      loop: true,
+    });
+    lightGallery(document.querySelector("#galSchool"), {
+      thumbnail: true,
+      animateThumb: false,
+      showThumbByDefault: false,
+      mode: "lg-fade",
+      loop: true,
+    });
+  });
+}
 // Navbar toggle
 let navUl = document.querySelector("#navUl");
 let hamburgerIcon = document.querySelector("#hamburgerIcon");
@@ -167,4 +214,24 @@ form.addEventListener("submit", function (e) {
         result.style.display = "none";
       }, 3000);
     });
+});
+
+// setup popup gallery
+document.querySelectorAll(".popupClick").forEach((popup) => {
+  popup.addEventListener("click", () => {
+    let popupChild = popup.lastElementChild;
+    popupChild.classList.toggle("hidden");
+  });
+});
+document.querySelectorAll(".popupInner").forEach((popupInner) => {
+  popupInner.addEventListener("click", (evt) => {
+    evt.stopPropagation();
+  });
+});
+document.querySelectorAll(".popupClose").forEach((popupClose) => {
+  popupClose.addEventListener("click", () => {
+    popupClose.parentElement.parentElement.parentElement.classList.toggle(
+      "hidden"
+    );
+  });
 });
