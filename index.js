@@ -45,9 +45,8 @@ function enableSmoothScroll() {
 }
 function enableAos() {
   // Animate on Scroll
-  $(document).ready(function () {
-    AOS.init();
-  });
+
+  AOS.init();
 }
 function enableSwiperSlide() {
   const swiper = new Swiper(".swiper-container", {
