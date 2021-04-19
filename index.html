@@ -226,6 +226,22 @@
             </div>
             <div class="flex flex-col md:flex-row flex-wrap justify-center items-center">
 
+
+                <div
+                    class="flex flex-col md:flex-row justify-center items-center bg-green-50 p-5 shadow-md rounded-xl m-5">
+                    <a href="./img/faculty/father2.jpeg" data-lightbox="facultyManagement"
+                        data-title="Fr. George Thakidiyel "><img src="./img/faculty/father2.jpeg" alt=""
+                            class="w-24 h-24 rounded-full"></a>
+                    <div class="contact text-center md:text-left p-2">
+                        <p class="pl-2 font-body">
+                            <span class="font-bold text-lg py-2 font-display">Fr. George Thakidiyel</span> <br>
+
+                            <span class="font-bold">Secratary</span><br>
+
+
+                        </p>
+                    </div>
+                </div>
                 <div
                     class="flex flex-col md:flex-row justify-center items-center bg-green-50 p-5 shadow-md rounded-xl m-5">
                     <a href="./img/faculty/mainFather.jpg" data-lightbox="facultyManagement"
@@ -243,22 +259,6 @@
                         </p>
                     </div>
                 </div>
-                <div
-                    class="flex flex-col md:flex-row justify-center items-center bg-green-50 p-5 shadow-md rounded-xl m-5">
-                    <a href="./img/faculty/father2.jpeg" data-lightbox="facultyManagement"
-                        data-title="Fr. George Thakidiyel "><img src="./img/faculty/father2.jpeg" alt=""
-                            class="w-24 h-24 rounded-full"></a>
-                    <div class="contact text-center md:text-left p-2">
-                        <p class="pl-2 font-body">
-                            <span class="font-bold text-lg py-2 font-display">Fr. George Thakidiyel</span> <br>
-
-                            <span class="font-bold">Secratary</span><br>
-
-
-                        </p>
-                    </div>
-                </div>
-
             </div>
         </div>
         <h3 class="text-center font-bold font-display underline pt-10 text-xl py-10 text-red-800">Headmaster</h3>
@@ -509,10 +509,11 @@
                     <div class="pics relative">
                         <div id="galSchool" class="relative flex justify-evenly items-center flex-wrap">
                             <script>
-
-                                for (i = 0; i < 20; i++) {
+                                let newElem;
+                                let baseUrl;
+                                for (i = 0; i < 13; i++) {
                                     baseUrl = `./img/galleryGeneral/GalGeneral${i + 1}.jpeg`;
-                                    let newElem = ` <a href="${baseUrl}">
+                                    newElem = ` <a href="${baseUrl}">
                                 <img src="${baseUrl}" class="w-64 md:w-72 m-5" loading="lazy"/>
                             </a>
                             
@@ -556,7 +557,7 @@
 
                                     for (i = 0; i < 5; i++) {
                                         baseUrl = `./img/galleryChildrensDay/GalChildr${i + 1}.jpeg`;
-                                        let newElem = ` <a href="${baseUrl}">
+                                        newElem = ` <a href="${baseUrl}">
                                     <img src="${baseUrl}" class="w-64 md:w-72 m-5" loading="lazy"/>
                                 </a>
                                 
@@ -598,7 +599,7 @@
 
                                     for (i = 0; i < 6; i++) {
                                         baseUrl = `./img/galleryOnam/GalOnam${i + 1}.jpeg`;
-                                        let newElem = ` <a href="${baseUrl}">
+                                        newElem = ` <a href="${baseUrl}">
                                     <img src="${baseUrl}" class="w-64 md:w-72 m-5" loading="lazy"/>
                                 </a>
                                 
@@ -640,7 +641,7 @@
 
                                     for (i = 0; i < 4; i++) {
                                         baseUrl = `./img/galleryAniversary/GalAnni${i + 1}.jpeg`;
-                                        let newElem = ` <a href="${baseUrl}">
+                                        newElem = ` <a href="${baseUrl}">
                                     <img src="${baseUrl}" class="w-64 md:w-72 m-5" loading="lazy"/>
                                 </a>
                                 
@@ -682,7 +683,7 @@
 
                                     for (i = 0; i < 2; i++) {
                                         baseUrl = `./img/galleryIndependance/GalIndep${i + 1}.jpeg`;
-                                        let newElem = ` <a href="${baseUrl}">
+                                        newElem = ` <a href="${baseUrl}">
                                     <img src="${baseUrl}" class="w-64 md:w-72 m-5" loading="lazy"/>
                                 </a>
                                 
@@ -724,7 +725,7 @@
 
                                     for (i = 0; i < 4; i++) {
                                         baseUrl = `./img/galleryTeachersday/GalTDay${i + 1}.jpeg`;
-                                        let newElem = ` <a href="${baseUrl}">
+                                        newElem = ` <a href="${baseUrl}">
                                     <img src="${baseUrl}" class="w-64 md:w-72 m-5" loading="lazy"/>
                                 </a>
                                 
