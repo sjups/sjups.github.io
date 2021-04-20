@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
         integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
         crossorigin="anonymous" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>SJUPS Narakakkanam</title>
@@ -201,7 +205,7 @@
         <h2 class="text-center font-bold font-display underline pt-10 text-3xl py-10">Faculty</h2>
         <h3 class="text-center font-bold font-display underline pt-10 text-xl py-10 text-green-600">Management</h3>
         <div id="FacultyManagement" class="flex flex-col items-center">
-            <div class="m-5 p-5 bg-green-50  shadow-lg inline-block">
+            <div class="m-5 p-5 bg-green-50  shadow-lg inline-block rounded-lg">
                 <div class="flex flex-col md:flex-row justify-center items-center ">
                     <img src="./img/faculty/father1.jpeg" alt="" class="w-48 md:w-56 lg:w-68 rounded mx-3">
                     <div class="details text-center md:text-left p-3">
@@ -259,7 +263,7 @@
             </div>
         </div>
         <h3 class="text-center font-bold font-display underline pt-10 text-xl py-10 text-red-800">Headmaster</h3>
-        <div class="m-5 p-5 bg-white shadow-lg inline-block">
+        <div class="m-5 p-5 bg-white shadow-lg rounded-lg inline-block">
             <div class="flex flex-col md:flex-row justify-center items-center ">
                 <img src="./img/faculty/HM.jpg" alt="" class="w-48 md:w-56 lg:w-68 rounded mx-3">
                 <div class="details text-center md:text-left p-3">
@@ -464,6 +468,25 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
+        </div>
+        <h3 class="text-center font-bold font-display underline pt-10 text-xl py-10 text-blue-800">Non-Teaching Staffs
+        </h3>
+        <div class="nonTeaching">
+            <div class="flex flex-col md:flex-row justify-center items-center bg-red-50 p-5 shadow-md rounded-xl m-5">
+                <a href="./img/faculty/Ancy.jpeg" data-lightbox="facultyNonStaff" data-title="Ancy"><img
+                        src="./img/faculty/Ancy.jpeg" alt="Ancy micheal Photo" class="w-24 h-24 rounded-full"></a>
+
+                <div class="contact text-center md:text-left p-2">
+                    <p class="pl-2 font-body">
+                        <span class="font-bold text-lg py-2 font-display">Ancy Micheal</span>
+                        <br>
+
+                        <span class="font-bold">Office Assistant</span><br>
+
+
+                    </p>
+                </div>
+            </div>
         </div>
         <div id="pta" class="pb-12">
             <h3 class="text-center font-bold font-display underline text-xl py-10 text-gray-600">P.T.A</h3>
